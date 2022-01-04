@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: $mainColor;
+  display: flex;
+
+  .left {
+    z-index: 1;
+    flex: 1;
+    overflow: hidden;
+    @include mobile {
+      display: none;
+    }
+    img {
+      height: 100%;
+      position: relative;
+      right: 50px;
+    }
+  }
+
+  .middle {
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $mainColor;
+    @include mobile {
+      flex: 1;
+      justify-content: space-evenly;
+    }
+    h2 {
+      overflow: hidden;
+      font-size: 30px;
+      color: whitesmoke;
+    }
+
+    form {
+      margin-top: -50px;
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      @include mobile {
+        margin-top: -40px;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      textarea {
+        text-align: center;
+        margin-top: -140px;
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        @include mobile {
+          margin-top: -100px;
+        }
+      }
+
+      button {
+        margin-top: -100px;
+        width: 200px;
+        height: 60px;
+        color: $mainColor;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 25px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        margin-top: -100px;
+        overflow: hidden;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .rights {
+    z-index: 0;
+    flex: 1;
+    overflow: hidden;
+    @include mobile {
+      display: none;
+    }
+    img {
+      height: 100%;
+      position: absolute;
+      left: 570px;
+    }
+  }
+}
