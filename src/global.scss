@@ -1,10 +1,9 @@
-$mainColor:#7a00df;
-$secondaryColor:rgb(255, 115, 34);
+$mainColor: #ffffff;
+$secondaryColor: rgb(255, 115, 34);
 
 $width: 768px;
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
-    
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }
