@@ -7,29 +7,29 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     <div className={"topbar  " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
-            Welcome!
+          <a className="logo" href="#intro" >
+            Welcome
           </a>
           <div className="itemContainer">
             <PhoneIphone className="icon" />
             <span>+954 789 3017</span>
           </div>
           <div className="itemContainer">
-            <Email className="icon" />
+            <Email className="icon"/>
             <span>ethanrele@gmail.com</span>
           </div>
-            <a href="https://www.linkedin.com/in/ethan-releford-2aa104214/"  target="_blank"  >
             <div className="itemContainer">
             <LinkedIn className= "icon Linked"/>
-            <span>LinkedIn</span>
-            </div>
+            <a className="link" href="https://www.linkedin.com/in/ethan-releford-2aa104214/"  target="_blank"  >
+            LinkedIn
             </a>
-            <a href="https://github.com/ethanreleford" target="_blank">
+            </div>
             <div className="itemContainer">
             <GitHub className= "icon Linked"/>
-            <span>GitHub</span>
-            </div>
+            <a className="link" href="https://github.com/ethanreleford" target="_blank">
+            GitHub
             </a>
+            </div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

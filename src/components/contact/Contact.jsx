@@ -9,13 +9,11 @@ export default function Contact() {
         e.preventDefault();
         setMessage(true);
     }
-
+    
     return (
         <div className = "contact" id="contact">
-            <div className="left">
             <img src="./assets/tech.jpg" alt="" />
-            </div>
-            <div className="middle">
+            <div className="information">
                 <h2>Contact Me!</h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="Email" />
@@ -23,9 +21,6 @@ export default function Contact() {
                     <button type="Submit">Send</button>
                     {message && <span>Thanks, I will reply as soon as possible!</span>}
                 </form>
-            </div>
-            <div className="rights">
-                <img src="./assets/tech.jpg" alt="" />
             </div>
         </div>
     )
